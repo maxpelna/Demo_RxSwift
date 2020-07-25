@@ -1,0 +1,7 @@
+disabled_rules:
+- identifier_name
+excluded:
+- Carthage
+- Pods
+included:
+- Demo_RxSwift

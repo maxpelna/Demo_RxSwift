@@ -1,0 +1,41 @@
+[[General]]
+
+  [list_title]
+    en = GIFList
+    ru = GIFList
+  [searchbar_text]
+    en = Search GIF images
+    ru = Поиск Гифок
+  [share_button]
+    en = Share
+    ru = Поделиться
+  
+[[Alerts]]
+
+  [clear_button]
+    en = Clear
+    ru = Очистить
+  [ok_button]
+    en = OK
+    ru = OK
+  [cancel_button]
+    en = Cancel
+    ru = Отменить
+  [clear_title]
+    en = Clear cache?
+    ru = Очистить кэш?
+  [clear_description]
+    en = Do you really want to clear '%@' MB from disk?
+    ru = Вы действительно хотите удалить '%@' MB кэша?
+  [chill_title]
+    en = Chill
+    ru = Успокойтесь
+  [chill_description]
+    en = No cache to delete!
+    ru = Нечего удалять
+  [error_title]
+    en = Something went wrong
+    ru = Что-то пошло не так
+
+
+  

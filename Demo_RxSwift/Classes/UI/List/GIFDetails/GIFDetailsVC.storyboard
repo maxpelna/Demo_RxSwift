@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p5T-dw-tam">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailsVC-->
+        <scene sceneID="jpN-e3-aF3">
+            <objects>
+                <viewController storyboardIdentifier="GIFDetailsVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="p5T-dw-tam" customClass="GIFDetailsVC" customModule="Demo_RxSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JjB-tV-asx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0W7-NA-2Yx">
+                                <rect key="frame" x="16" y="179" width="382" height="548"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xsc-Oc-itU">
+                                        <rect key="frame" x="322" y="8" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="Lkj-MU-eys"/>
+                                            <constraint firstAttribute="height" constant="44" id="yQi-ud-7cy"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="icon-close">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22" scale="large" weight="semibold"/>
+                                        </state>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c0a-JR-7Il">
+                                        <rect key="frame" x="8" y="72" width="366" height="400"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="999" constant="400" id="Ftq-ca-yvh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0b-Ny-fJ5">
+                                        <rect key="frame" x="122.66666666666666" y="492" width="136.99999999999997" height="40"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Zk6-Gm-ACk"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="40" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="-10" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                        <state key="normal" title="Share" image="icon-share"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="c0a-JR-7Il" secondAttribute="trailing" constant="8" id="9Vr-5R-gM4"/>
+                                    <constraint firstItem="J0b-Ny-fJ5" firstAttribute="top" secondItem="c0a-JR-7Il" secondAttribute="bottom" constant="20" id="BDg-Ul-Kir"/>
+                                    <constraint firstItem="xsc-Oc-itU" firstAttribute="top" secondItem="0W7-NA-2Yx" secondAttribute="top" constant="8" id="Tsy-6I-cAG"/>
+                                    <constraint firstItem="J0b-Ny-fJ5" firstAttribute="centerX" secondItem="0W7-NA-2Yx" secondAttribute="centerX" id="VfI-Gc-svG"/>
+                                    <constraint firstItem="c0a-JR-7Il" firstAttribute="leading" secondItem="0W7-NA-2Yx" secondAttribute="leading" constant="8" id="mDZ-Dx-F0W"/>
+                                    <constraint firstAttribute="trailing" secondItem="xsc-Oc-itU" secondAttribute="trailing" constant="16" id="p6v-Y4-inf"/>
+                                    <constraint firstItem="c0a-JR-7Il" firstAttribute="top" secondItem="xsc-Oc-itU" secondAttribute="bottom" constant="20" id="tiO-eZ-gYh"/>
+                                    <constraint firstAttribute="bottom" secondItem="J0b-Ny-fJ5" secondAttribute="bottom" constant="16" id="wWt-sg-Oh0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZVS-Y7-of2" firstAttribute="trailing" secondItem="0W7-NA-2Yx" secondAttribute="trailing" constant="16" id="42i-h1-iC3"/>
+                            <constraint firstItem="0W7-NA-2Yx" firstAttribute="centerY" secondItem="ZVS-Y7-of2" secondAttribute="centerY" id="I0J-BJ-LDI"/>
+                            <constraint firstItem="0W7-NA-2Yx" firstAttribute="leading" secondItem="ZVS-Y7-of2" secondAttribute="leading" constant="16" id="fnI-SR-t5g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZVS-Y7-of2"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeBtn" destination="xsc-Oc-itU" id="HPe-M4-mmQ"/>
+                        <outlet property="contrainerSideConstraint" destination="42i-h1-iC3" id="B7P-1t-JoM"/>
+                        <outlet property="imageHeight" destination="Ftq-ca-yvh" id="Tiv-aS-lk6"/>
+                        <outlet property="imageSideConstraint" destination="9Vr-5R-gM4" id="IBt-dg-6qg"/>
+                        <outlet property="imageView" destination="c0a-JR-7Il" id="JGh-so-taR"/>
+                        <outlet property="shareBtn" destination="J0b-Ny-fJ5" id="sgi-o4-jv7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o9X-gF-G6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon-close" width="32" height="32"/>
+        <image name="icon-share" width="20" height="20"/>
+    </resources>
+</document>
